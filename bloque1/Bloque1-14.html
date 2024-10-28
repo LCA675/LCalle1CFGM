@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14 Bloque 1</title>
+</head>
+<body>
+    <script>
+        let sueldo=0, años=0, sueldot=0;
+        sueldo=parseInt(prompt("Introduzca su salario al mes: "));
+        años=parseInt(prompt("Introduzca sus años de antiguedad en la empresa: "));
+        if (sueldo<500) {
+            if (años>10) {
+                sueldot=(sueldo*0.2)+sueldo
+                document.write("A su sueldo se le ha aplicado un 20% más por cobrar menos de 500€ y haber estado más de 10 años en la empresa. Su sueldo total es: "+sueldot)
+            } else { 
+                sueldot=(sueldo*0.05)+sueldo
+                document.write("A su sueldo se le ha aplicado un 5% más por cobrar menos de 500€ y haber estado menos de 10 años en la empresa. Su sueldo total es: "+sueldot)
+            }
+        } else {
+            document.write("Su sueldo total es: "+sueldo)
+        }
+    </script>
+</body>
+</html>

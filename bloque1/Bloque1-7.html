@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 Bloque 1</title>
+</head>
+<body>
+    <script>
+        let N1=0, N2=0, Suma=0, Producto=0, Division=0, Resta=0;
+        N1=parseInt(prompt("Introduzca el primer numero: "))
+        N2=parseInt(prompt("Introduzca el segundo numero: "))
+        if (N1 > N2){
+            Suma=N1+N2
+            Resta=N1-N2
+            document.write("La suma de los dos numeros es: "+Suma)
+            document.write("<br> La diferencia entre los dos numeros es: "+Resta)
+        } else {
+            Producto=N1*N2
+            Division=N1/N2
+            document.write("La multiplicacion de los dos numeros es: "+Producto)
+            document.write("<br> La divison entre los dos numeros es: "+Division) 
+        }
+    </script>
+</body>
+</html>

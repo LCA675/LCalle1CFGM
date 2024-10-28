@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 Bloque 1</title>
+</head>
+<body>
+    <script>
+        function suma(N1, N2, N3, N4) {
+        sumat=(N1+N2+N3+N4)
+        return "La suma total de los números introducidos son: "+sumat;
+        }
+        
+        function producto(N1, N2, N3, N4) {
+        productot=N1*N2*N3*N4
+        return "La suma total de los números introducidos son: "+productot;
+        }
+
+        N1=parseInt(prompt("Introduzca el primer número: "))
+        N2=parseInt(prompt("Introduzca el segundo número: "))
+        N3=parseInt(prompt("Introduzca el tercer número: "))
+        N4=parseInt(prompt("Introduzca el cuarto número: "))
+        let resultado1=suma(N1, N2, N3, N4);
+        document.write(resultado1 +"<br>")
+        let resultado=producto(N1, N2, N3, N4);
+        document.write(resultado)
+    </script>
+</body>
+</html>

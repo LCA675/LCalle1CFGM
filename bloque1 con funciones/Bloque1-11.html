@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 Bloque 1</title>
+</head>
+<body>
+    <script>
+        function positivoNegativo() {
+        let N=0;
+        N=parseInt(prompt("Introduzca un número positivo, negativo o cero: "))
+        if (N<0) {
+            return "El numero que ha introducido es negativo"
+        }else{
+            if (N==0) {
+                return "El numero que ha introducido es cero"
+             } else {
+                return "El numero que ha introducido es positivo"
+             }
+        }
+    }
+    let r=positivoNegativo();
+    document.write(r)
+    </script>
+</body>
+</html>

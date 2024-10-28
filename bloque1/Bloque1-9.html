@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 Bloque 1</title>
+</head>
+<body>
+    <script>
+        let nt=0, acumulador=0, pro=0, nota=0;
+        for (acumulador>0; acumulador<3; acumulador++){
+           nota=parseInt(prompt("Introduzca sus notas: "))
+            nt=nota+nt
+        }
+        pro=(nt)/acumulador;
+        if (pro >= 4) {
+            document.write("La nota está bien👍: "+pro);
+        } else {
+            document.write("La nota está mal 👎: "+pro);
+        }
+    </script>
+</body>
+</html>

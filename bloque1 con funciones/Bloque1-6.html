@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 Bloque 1</title>
+</head>
+<body>
+    <script>
+       function contraseña() {
+        let clave=0, clave1=0;
+        clave=(prompt("Introduzca su contraseña: "))
+        clave1=(prompt("introduzca de nuevo su contraseña: "))
+        if (clave == clave1) {
+             return"Ha introducido correctamente su contraseña: "+clave
+        } else {
+            return "Ha introducido erroneamente la contraseña, porfavor vuelva a introducirla"
+        }
+       }
+       let resultado=contraseña();
+       document.write(resultado)
+    </script>
+</body>
+</html>

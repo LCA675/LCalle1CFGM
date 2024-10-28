@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 Bloque 1 </title>
+</head>
+<body>
+    <script>
+       function precio(preciot, dint, vuel) {
+        vuel=dint-preciot
+        return "La vuelta de su dinero es: "+vuel+ "€"
+       }
+       PrecioPro=parseInt(prompt("Introduzca el precio del artículo deseado: "))
+       Dintotal=parseInt(prompt("Introduzca el dinero que posee: "))
+       let resultado=precio(PrecioPro, Dintotal );
+       document.write(resultado)
+    </script>
+</body>
+</html>

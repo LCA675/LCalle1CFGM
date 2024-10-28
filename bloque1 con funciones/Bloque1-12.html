@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 Bloque 1</title>
+</head>
+<body>
+    <script>
+       function digito() {
+        let N=0;
+        N=parseInt(prompt("Introduzca un número del 1 al 999: "))
+        if (N<10) {
+            return "El numero que ha introducido tiene una cifra"
+        } else {
+            if (N>99) {
+                return "El numero que ha introducido tiene tres cifras"
+            } else {
+                return "El numero que ha introducido tiene dos cifras"
+            }
+        }
+       }
+       let r=digito();
+       document.write(r)
+    </script>
+</body>
+</html>

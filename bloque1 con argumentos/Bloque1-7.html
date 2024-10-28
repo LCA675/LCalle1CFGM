@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 Bloque 1</title>
+</head>
+<body>
+    <script>
+        function resultadoTotal (n, n1) {
+       function resultadoSuma () {
+        Suma=n+n1;
+        return +Suma;
+       }
+       function resultadoProducto(n, n1) {
+       Producto=n*n1;
+       return +Producto;
+       }
+       function resultadoResta(n, n1) {
+        Resta=n-n1;
+        return +Resta;
+       }
+       function resultadoDivision(n, n1) {
+        Division=n/n1;
+        return +Division;
+       } if (n, n1){
+            document.write("La suma de los dos numeros es: "+Suma)
+            document.write("<br> La diferencia entre los dos numeros es: "+Resta)
+            return "";
+        } else {
+            document.write("La multiplicacion de los dos numeros es: "+Producto)
+            document.write("<br> La divison entre los dos numeros es: "+Division) 
+            return "";
+        }
+       }
+       N1=parseInt(prompt("Introduzca el primer numero: "))
+       N2=parseInt(prompt("Introduzca el segundo numero: "))
+       let r=resultadoTotal(N1, N2);
+       //r1=resultadoSuma(), r2=resultadoResta(), r3=resultadoProducto(), r4=resultadoDivision()
+       document.write(r)
+    </script>
+</body>
+</html>
