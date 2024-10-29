@@ -7,19 +7,18 @@
 </head>
 <body>
     <script> 
-        function promedio() {
-        let N1=0, N2=0, N3=0, pro=0;
-        N1=parseInt(prompt("Introduzca la primera nota: "))
-        N2=parseInt(prompt("Introduzca la segunda nota: "))
-        N3=parseInt(prompt("Introduzca la tercera nota: "))
-        pro=(N1+N2+N3)/3
+        function promedio(N1, N2, N3) {    
+        pro=(n1+n2+n3)/3
         if (pro >= 4) {
             return "La nota está bien👍: "+pro;
         } else {
             return "La nota está mal 👎: "+pro;
         }               
     } 
-    let r=promedio();
+    N1=parseInt(prompt("Introduzca la primera nota: "))
+    N2=parseInt(prompt("Introduzca la segunda nota: "))
+    N3=parseInt(prompt("Introduzca la tercera nota: "))
+    let r=promedio(N1, N2, N3);
     document.write(r)
     </script>
 </body>

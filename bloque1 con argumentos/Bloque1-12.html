@@ -7,20 +7,19 @@
 </head>
 <body>
     <script>
-       function digito() {
-        let N=0;
-        N=parseInt(prompt("Introduzca un número del 1 al 999: "))
-        if (N<10) {
+       function digito(n) {
+        if (n<10) {
             return "El numero que ha introducido tiene una cifra"
         } else {
-            if (N>99) {
+            if (n>99) {
                 return "El numero que ha introducido tiene tres cifras"
             } else {
                 return "El numero que ha introducido tiene dos cifras"
             }
         }
        }
-       let r=digito();
+       N=parseInt(prompt("Introduzca un número del 1 al 999: "))
+       let r=digito(N);
        document.write(r)
     </script>
 </body>

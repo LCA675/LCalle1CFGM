@@ -7,24 +7,23 @@
 </head>
 <body>
     <script>
-        function su() {
-            let N1=0, N2=0, N3=0, su=0, pro=0;
-        N1=parseInt(prompt("Introduzca el primer número"));
-        N2=parseInt(prompt("Introduzca el segundo número"));
-        N3=parseInt(prompt("introduzca el tercer número"));
-        if (N1==N2) {
-            if (N1==N3) {
-                if (N2==N3) {
-                    su=N2+N1;
-                    pro=su*N3;
-                    return "Los números son iguales y su suma del primero y el segundo es: "+su+ " <br> y la multiplicacion de la suma del primero con el segundo y luego con el tercero es:" +pro;
+        function su(n1, n2, n3, sus, prom) {
+        if (n1==n2) {
+            if (n1==n3) {
+                if (n2==n3) {
+                    sus=n2+n1;
+                    prom=sus*n3;
+                    return "Los números son iguales y su suma del primero y el segundo es: "+sus+ " <br> y la multiplicacion de la suma del primero con el segundo y luego con el tercero es:" +prom;
                 }
             }
         } else {
             return "Los números no son iguales";
         }
         }
-        let r=su();
+        N1=parseInt(prompt("Introduzca el primer número"));
+        N2=parseInt(prompt("Introduzca el segundo número"));
+        N3=parseInt(prompt("introduzca el tercer número"));
+        let r=su(N1, N2, N3);
         document.write(r)
     </script>
 </body>

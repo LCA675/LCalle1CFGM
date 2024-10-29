@@ -7,16 +7,15 @@
 </head>
 <body>
     <script>
-        function digitos() {
-        let N=0;
-        N=parseInt(prompt("Introduzca un número del 1 al 99: "))
-        if (N > 10) {
+        function digitos(N) {
+        if (n > 10) {
             return "El número que ha introducido tiene dos dígitos";
         } else { 
             return "El número que ha introducido solo tiene un dígito";
         }
     }
-    let r=digitos();
+    N=parseInt(prompt("Introduzca un número del 1 al 99: "))
+    let r=digitos(N);
     document.write(r)
     </script>
 </body>

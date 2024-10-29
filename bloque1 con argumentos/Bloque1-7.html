@@ -8,28 +8,34 @@
 <body>
     <script>
         function resultadoTotal (n, n1) {
-       function resultadoSuma () {
+        function resultadoSuma (n, n1) {
         Suma=n+n1;
-        return +Suma;
+        return Suma;
        }
        function resultadoProducto(n, n1) {
        Producto=n*n1;
-       return +Producto;
+       return Producto;
        }
        function resultadoResta(n, n1) {
         Resta=n-n1;
-        return +Resta;
+        return Resta;
        }
        function resultadoDivision(n, n1) {
         Division=n/n1;
-        return +Division;
-       } if (n, n1){
-            document.write("La suma de los dos numeros es: "+Suma)
-            document.write("<br> La diferencia entre los dos numeros es: "+Resta)
+        return Division;
+       } if (n > n1){
+            resultadoSuma(n, n1)
+            resultadoResta(n, n1)
+            let doc=document.write("La suma de los dos numeros es: "+Suma)
+            let doc1=document.write("<br> La diferencia entre los dos numeros es: "+Resta)
+            let r=doc+doc1+doc2+doc3;
             return "";
         } else {
-            document.write("La multiplicacion de los dos numeros es: "+Producto)
-            document.write("<br> La divison entre los dos numeros es: "+Division) 
+            resultadoProducto(n, n1)
+            resultadoDivision(n, n1)
+            let doc2=document.write("La multiplicacion de los dos numeros es: "+Producto)
+            let doc3=document.write("<br> La divison entre los dos numeros es: "+Division)
+            let r=doc+doc1+doc2+doc3; 
             return "";
         }
        }
