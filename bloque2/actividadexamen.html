@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        preguntas=parseInt(prompt("Introduzca el numero de preguntas de examen"))
+        aciertos=parseInt(prompt("Introduzca el numero de aciertos de su examen"))
+        nombre=prompt("introduzca su nombre")
+        function calcularNivel (preguntas, aciertos, nombre) {
+            porcentaje=(aciertos/preguntas)*100
+                if (porcentaje>=90) {
+                    return "Su nota está por encima del 90%, está en nivel superior <br> Su nombre es "+nombre
+                } else if (porcentaje>=75 && porcentaje<90) {
+                    return "Su nota está entre un 75% y un 90%, está en nivel medio <br> Su nombre es "+nombre
+                } else if (porcentaje>=50 && porcentaje<75) {
+                    return "Su nota está entre un 50% y un 75%, está en nivel regular <br> Su nombre es "+nombre
+                } else if (porcentaje<50) {
+                    return "Su nota está por debajo del 50%, está fuera de nivel <br> Su nombre es "+nombre
+                }
+        }
+        let r=calcularNivel(preguntas, aciertos, nombre);
+        document.write(r)
+    </script>
+</body>
+</html>
