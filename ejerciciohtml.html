@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function buscarSubcadena (cadena1, cadena2) {
+            if (cadena1.indexOf(cadena2)!=-1) {                    
+                resultado="Se ingreso la cadena " +cadena1+ "y " +cadena2;
+                } else {
+                    resultado="No se ingreso la subcadena "+cadena1+ " y tampoco " +cadena2;
+                }
+                return resultado;
+        }
+        let cadena1=prompt("Ingrese su primera cadena")
+        let cadena2=prompt("Ingrese su segunda cadena")
+        let r=buscarSubcadena(cadena1, cadena2);
+        document.write(r)
+    </script>
+</body>
+</html>

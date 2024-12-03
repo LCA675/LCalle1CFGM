@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Examen JS</title>
+</head>
+<body>
+    <script>
+        let resultadofinal=0, calculo=0;
+        function potencia (base, exponente) {
+            base=parseInt(prompt("Introduzca un número base para elevar: "))
+            exponente=parseInt(prompt("Introduza el exponente del número a elevar (TIENE QUE SER UN NUMERO POSITIVO: )"))
+            for (exponente=0; exponente=calculo; calculo=base*calculo)  { 
+                if (exponente>=0) {
+                    resultadofinal=calculo*base
+                } else {
+                    document.write("El numero tiene que ser mayor o igual a 0, no puede ser negativo")
+                }
+                return "La base del número es: "+base+", el exponente es: "+exponente+ "y su resultado al elevarlo es:" +resultadofinal
+            }
+        } 
+        let resultado=potencia();
+        document.write(resultado)
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio3</title>
+</head>
+<body>
+    <script>
+        long1=parseInt(prompt("Introduzca el primer lado del triangulo"))
+        long2=parseInt(prompt("Introduzca el segundo lado del triangulo"))
+        long3=parseInt(prompt("Introduzca el tercer lado del triangulo"))
+        function tipoTriangulo (long1, long2, long3) {
+            let long1y2=0;
+            long1y2=long1+long2;
+            if (long1y2<long3) {
+                return "No es un triangulo"
+            } else if (long1==long2 && long1==long3) {
+                return "Los lados son iguales, triangulo equilatero"
+            } else if (long1==long2 && long1!=long3) {
+                return "Dos lados son iguales, triangulo isosceles"
+            } else if (long2==long3 && long2!=long1) {
+                return "Dos lados son iguales, triangulo isosceles"
+            } else if (long1!=long2 && long1!=long3) {
+                return "Los lados son diferentes, triangulo escaleno"
+            } else if (long1==long3 && long1!=long2) {
+                return "Dos lados son iguales, triangulo isosceles"
+            }
+        }
+        let r=tipoTriangulo(long1, long2, long3 );
+        document.write(r)
+    </script>
+</body>
+</html>

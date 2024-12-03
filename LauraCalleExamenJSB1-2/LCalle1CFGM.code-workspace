@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Examen JS 2024 Laura Calle"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Examen JS 2024 Laura Calle"
+	}
+}

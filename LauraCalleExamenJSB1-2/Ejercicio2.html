@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    <script>
+        function numeroARomano (num) {
+        switch (num) {
+                case 1:
+                    documento="I"
+                    break;
+                case 2:
+                    documento="II"
+                    break;
+                case 3: 
+                    documento="III"
+                    break;
+                case 4:
+                    documento="IV"
+                    break;
+                case 5:
+                    documento="V"
+                    break;
+                case 6: 
+                    documento="VI"
+                    break;
+                case 7:
+                    documento="VII"
+                    break;
+                case 8:
+                    documento="VIII"
+                    break;
+                case 9: 
+                    documento="IX"
+                    break;
+                case 10: 
+                    documento="X"
+                    break;
+                default: 
+                    document=0
+            }
+            return "El numero en romanos es "+documento;
+       }
+            let num=0;
+        num=parseInt(prompt("Introduzca un numero del 1 al 10 para traducirlo a numeros romanos:"))
+        let resultado=numeroARomano(num);
+        document.write(resultado)
+        if (num<0 && num>10) {
+            document.write("el numero introducid no vale")
+        } 
+    </script>
+</body>
+</html>
