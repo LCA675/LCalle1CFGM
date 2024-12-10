@@ -13,15 +13,18 @@
         <label for="apellido">Apellido:</label>
         <input type="text" id="apellido">
 
+        <input type="text" id="resultado">
+
         <input type="button" value="Enviar" onclick="a1()">
 
     </form>
     <script>
         function a1 () {
-            nom= document.getElementById("nombre").value;
-            apelli= document.getElementById("apellido").value;
+            let nom= document.getElementById("nombre").value;
+            let apelli= document.getElementById("apellido").value;
             alert ("Su nombre y apellido son "+nom+" "+apelli)
-        }
+            let suma= nom +" " +apelli;
+            document.getElementById("resultado").value = suma;        }
 
     </script>
 </body>
