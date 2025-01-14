@@ -10,9 +10,9 @@
         <h3>Pizza</h3>
         <label for="pizza">Seleccione las pizza que desee:</label>
         <select id="pizza" onChange="precioPizza()" >
-            <option value="Jamon">Jamon y Queso: 4€</option>
-            <option value="Queso">Queso: 6€</option>
-            <option value="Especial">Especial: 10€</option>
+            <option value="4">Jamon y Queso</option>
+            <option value="6">Queso</option>
+            <option value="10">Especial</option>
         </select>
         <label for="cantidad">Seleccione el número de pizzas:</label>
             <input type="number" id="cantidad">
@@ -26,17 +26,7 @@
             let pizza=document.getElementById("pizza");
             let cantidad=document.getElementById("cantidad"); 
             let resul=document.getElementById("resul");
-                switch (pizza.value) {
-                    case "Jamon":
-                        resul.value=cantidad.value*4+"€";
-                        break;
-                    case "Queso":
-                        resul.value=cantidad.value*6+"€";
-                        break;
-                    case "Especial": 
-                        resul.value=cantidad.value*10+"€";
-                        break;
-                }
+               resul.value=pizza.value*cantidad.value+ "€"
         }
 
     </script>
