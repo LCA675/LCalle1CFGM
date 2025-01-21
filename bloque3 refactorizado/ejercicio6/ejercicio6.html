@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 Bloque 3</title>
+</head>
+<body>
+    <form>
+        <h3>Pizza</h3>
+        <label for="pizza">Seleccione las pizza que desee:</label>
+        <select id="pizza" onChange="precioPizza()" >
+            <option value="4">Jamon y Queso</option>
+            <option value="6">Queso</option>
+            <option value="10">Especial</option>
+        </select>
+        <label for="cantidad">Seleccione el número de pizzas:</label>
+            <input type="number" id="cantidad">
+        <label for="resul">Precio total a pagar:</label>
+            <input type="text" id="resul" disabled>
+            <input type="button" value="Calcular" onclick="precioPizza()">
+            
+    </form>
+    <script src="ejercicio6.js">
+        
+    </script>
+</body>
+</html>
